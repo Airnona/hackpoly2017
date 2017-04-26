@@ -1,0 +1,12 @@
+//tells user things about extension. name, description, version, etc
+{
+  "name": "OuttaFocus",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Keep yourself focused by blacklisting websites that tend to distract you!",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
+

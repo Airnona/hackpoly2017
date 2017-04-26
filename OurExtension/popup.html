@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title></title>
+
+<style type="text/css">
+
+div {
+	background-color: #99ccff;
+	border: 3px solid black;
+	padding: 5px;
+	margin: 2px;
+	box-shadow: 10px 10px 5px #b5b5b5
+}
+
+</style>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+$('#add').click( function localStorage(js) {
+    var theSite = $('#site').val();
+
+    // If the field is not empty, run this:
+    if($("site").val() != '') {
+        // Add value to whitelist/blacklist
+        $('item').prepend("<li>" + Site + "</li>");
+        // Delete value in the text field
+        $('#form')[0].reset();
+        var item = $('#item').html();
+        localStorage.setItem('item', item);
+        return false; 
+    }
+})
+</script>
+
+
+<div style = "width: 200px; height: 250px;"> 
+ 
+	<h4>
+
+		<img src="Logo16.png">Outta Focus 
+			
+		<button type="button">On</button>
+		<button type="button">Off</button>
+		
+	</h4>
+
+	<h4>Blur Level: 80%</h4>
+
+	<h4>Blur increases in: 2 minutes</h4>
+
+	<button type="button" onclick="localStorage()">Whitelist This Site</button>
+
+	<h4></h4>
+
+	<button type="button">Blacklist This Site</button>
+
+	<h4>
+		<a href="settings.html" target="_blank">Settings</a>
+	</h4>
+
+</div>
+
+</body>
+
+</html>

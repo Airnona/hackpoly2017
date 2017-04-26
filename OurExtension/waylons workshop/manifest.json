@@ -1,0 +1,48 @@
+{
+
+	"manifest_version": 2,
+	"name": "wExtension",
+	"version": "1.0",
+	"description": "I have no idea what I'm doing",
+	
+	"permissions":[
+		"contextMenus",
+		"storage",
+		"activeTab",
+		"tabs"
+	],
+	
+	"background": {
+		"scripts": ["newBG.js"],
+		"persistent": true   				
+	},
+	"content_scripts":[
+		{	
+			"matches": ["<all_urls>"],
+			"js": ["jquery-3.1.1.min.js", "testbg.js"]
+		}
+	],
+	
+	
+	"web_accessible_resources": [
+		"js/*",
+		"html/*",
+		"css/*",
+		"img/*"
+	],
+	
+	
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true
+	},
+	//"icons",
+	
+	
+	"browser_action":{
+		"default_icon": "overwatch.png",
+		"default_popup": "popup.html"
+	}
+	
+
+}
